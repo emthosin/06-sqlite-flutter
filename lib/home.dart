@@ -5,8 +5,8 @@
 import 'package:flutter/material.dart';
 import 'package:sqflite/sqflite.dart';
 import 'dart:async';
-import '/dbhelper.dart';
-import '/entryform.dart';
+import 'dbhelper.dart';
+import 'entryform.dart';
 import 'item.dart';
 
 //pendukung program asinkron
@@ -18,12 +18,11 @@ class Home extends StatefulWidget {
 class HomeState extends State<Home> {
   DbHelper dbHelper = DbHelper();
   int count = 0;
-  late List<Item> itemList;
+  List<Item> itemList;
   @override
   Widget build(BuildContext context) {
     if (itemList == null) {
-      // ignore: deprecated_member_use
-      itemList = <Item>[];
+      itemList = List<Item>();
     }
     return Scaffold(
       appBar: AppBar(
@@ -42,7 +41,6 @@ class HomeState extends State<Home> {
               onPressed: () async {
                 var item = await navigateToEntryForm(context, null);
                 if (item != null) {
-                  // ignore: todo
                   //TODO 2 Panggil Fungsi untuk Insert ke DB
                   int result = await dbHelper.insert(item);
                   if (result > 0) {
@@ -66,7 +64,7 @@ class HomeState extends State<Home> {
   }
 
   ListView createListView() {
-    TextStyle? textStyle = Theme.of(context).textTheme.headline5;
+    TextStyle textStyle = Theme.of(context).textTheme.headline5;
     return ListView.builder(
       itemCount: count,
       itemBuilder: (BuildContext context, int index) {
@@ -82,32 +80,18 @@ class HomeState extends State<Home> {
               itemList[index].name,
               style: textStyle,
             ),
-            subtitle: Text(itemList[index].price.toString()),
+            subtitle: Text(this.itemList[index].price.toString()),
             trailing: GestureDetector(
               child: const Icon(Icons.delete),
-              onTap: () async {
-                // ignore: todo
-                //TODO 3 Panggil Fungsi untuk Delete dari DB berdasarkan Item
-                //delete contact
-                void deleteItem(Item object) async {
-                  int result = await dbHelper.delete(object.id);
-                  if (result > 0) {
-                    updateListView();
-                  }
-                }
+              onTap: () {
+                //TODO 3 Panggil Fungsi untuk Delete data
+                deleteItem(itemList[index]);
               },
             ),
             onTap: () async {
               var item = await navigateToEntryForm(context, itemList[index]);
-              // ignore: todo
               //TODO 4 Panggil Fungsi untuk Edit data
-              //edit contact
-              void editItem(Item object) async {
-                int result = await dbHelper.update(object);
-                if (result > 0) {
-                  updateListView();
-                }
-              }
+              editItem(itemList[index]);
             },
           ),
         );
@@ -119,7 +103,6 @@ class HomeState extends State<Home> {
   void updateListView() {
     final Future<Database> dbFuture = dbHelper.initDb();
     dbFuture.then((database) {
-      // ignore: todo
       //TODO 1 Select data dari DB
       Future<List<Item>> itemListFuture = dbHelper.getItemList();
       itemListFuture.then((itemList) {
@@ -129,5 +112,21 @@ class HomeState extends State<Home> {
         });
       });
     });
+  }
+
+  //delete contact
+  void deleteItem(Item object) async {
+    int result = await dbHelper.delete(object.id);
+    if (result > 0) {
+      updateListView();
+    }
+  }
+
+  //Edit contact
+  void editItem(Item object) async {
+    int result = await dbHelper.update(object);
+    if (result > 0) {
+      updateListView();
+    }
   }
 }
