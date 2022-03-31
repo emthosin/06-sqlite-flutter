@@ -26,7 +26,8 @@ class HomeState extends State<Home> {
     }
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Daftar Item'),
+        title:
+            const Text('Daftar Item - M. Thosin Yuhaililul Hilmi | 2031710032'),
       ),
       body: Column(children: [
         Expanded(

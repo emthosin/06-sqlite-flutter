@@ -1,16 +1,32 @@
 # db_sqlite
 
-A new Flutter project.
+## MI2F-M. Thosin Yuhaililul Hilmi
 
-## Getting Started
+1. Tampilan Awal
+![Awal](https://user-images.githubusercontent.com/89894405/161004295-21c42c3e-7c14-4854-9c10-bd2874f0b766.jpeg)
 
-This project is a starting point for a Flutter application.
+2. Tambah Data
+![Tambah Data Awal](https://user-images.githubusercontent.com/89894405/161004319-35c5818a-9151-42da-a362-261ed747317f.jpeg)
 
-A few resources to get you started if this is your first Flutter project:
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+3. Hasil Tambah Data
+![Tambah Data Hasil](https://user-images.githubusercontent.com/89894405/161004325-6fa92a4f-3cc3-4999-944b-289dd24ab05b.jpeg)
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+4. Sebelum Delete
+![Delete after](https://user-images.githubusercontent.com/89894405/161004300-47cb8b4a-85cc-48d7-8de9-fb9a03a75df3.jpeg)
+
+5. Setelah Delete
+![Delete before](https://user-images.githubusercontent.com/89894405/161004304-c7138939-4b62-47d9-9a88-b152b4db2494.jpeg)
+
+6. Sebelum Edit
+![Edit Before](https://user-images.githubusercontent.com/89894405/161004314-0d31d1a8-4a3a-40c4-b78c-4f816a8482ba.jpeg)
+
+7. Hasil Edit
+![Edit (Nama mangga dan harga jeruk)](https://user-images.githubusercontent.com/89894405/161004310-4bbf9929-cf55-48b5-af6e-d59d079883fa.jpeg)
+
+
+
+
+
+
+
