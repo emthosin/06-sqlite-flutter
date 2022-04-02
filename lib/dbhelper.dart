@@ -16,7 +16,7 @@ class DbHelper {
     String path = directory.path + 'thosin.db';
 
     //create, read databases
-    var itemDatabase = openDatabase(path, version: 4, onCreate: _createDb);
+    var itemDatabase = openDatabase(path, version: 1, onCreate: _createDb);
 
     //mengembalikan nilai object sebagai hasil dari fungsinya
     return itemDatabase;
@@ -28,7 +28,9 @@ class DbHelper {
  CREATE TABLE item (
  id INTEGER PRIMARY KEY AUTOINCREMENT,
  name TEXT,
- price INTEGER
+ price INTEGER,
+ code TEXT,
+ stock INTEGER
  )
  ''');
   }

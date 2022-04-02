@@ -2,29 +2,37 @@
 
 ## MI2F-M. Thosin Yuhaililul Hilmi
 
-1. Tampilan Awal
-![Awal](https://user-images.githubusercontent.com/89894405/161004295-21c42c3e-7c14-4854-9c10-bd2874f0b766.jpeg)
+# 1. Tampilan Awal
+![Awal](https://user-images.githubusercontent.com/89894405/161372391-d9accd9b-dfcc-4bee-a3d6-522462d93f4c.jpeg)
 
-2. Tambah Data
-![Tambah Data Awal](https://user-images.githubusercontent.com/89894405/161004319-35c5818a-9151-42da-a362-261ed747317f.jpeg)
+# 2. Tambah Data
+![Tambah Data Awal](https://user-images.githubusercontent.com/89894405/161372399-a39f710b-ac89-466a-b241-f96036bf6619.jpeg)
+
+# 3. Hasil Tambah Data
+![Tambah Data Hasil](https://user-images.githubusercontent.com/89894405/161372400-1b9b5e39-ee7b-431d-805d-56d50a088662.jpeg)
+
+# 6. Sebelum Edit
+![Edit Before](https://user-images.githubusercontent.com/89894405/161372394-6cf34032-37c3-46e1-a761-fdd7d65b7ac2.jpeg)
+
+# 7. Proses Edit
+![Edit Proses](https://user-images.githubusercontent.com/89894405/161372397-321cc1b2-7bd5-4ddd-b5b8-bc10c445cbcf.jpeg)
+
+# 8. Hasil Edit
+![Edit Hasil   Sebelum Delete](https://user-images.githubusercontent.com/89894405/161372396-00dcc4e5-af2c-4309-9bc0-a7428a487af6.jpeg) 
+
+# 9. Sebelum Delete
+![Edit Hasil   Sebelum Delete](https://user-images.githubusercontent.com/89894405/161372396-00dcc4e5-af2c-4309-9bc0-a7428a487af6.jpeg)
+
+# 10. Setelah Delete
+![Delete after](https://user-images.githubusercontent.com/89894405/161372393-e22643f9-fd00-43e5-8488-d35719949999.jpeg)
 
 
-3. Hasil Tambah Data
-![Tambah Data Hasil](https://user-images.githubusercontent.com/89894405/161004325-6fa92a4f-3cc3-4999-944b-289dd24ab05b.jpeg)
-
-4. Sebelum Delete
-![Delete before](https://user-images.githubusercontent.com/89894405/161004304-c7138939-4b62-47d9-9a88-b152b4db2494.jpeg)
 
 
-5. Setelah Delete
-![Delete after](https://user-images.githubusercontent.com/89894405/161004300-47cb8b4a-85cc-48d7-8de9-fb9a03a75df3.jpeg)
 
-6. Sebelum Edit
-![Edit Before](https://user-images.githubusercontent.com/89894405/161004314-0d31d1a8-4a3a-40c4-b78c-4f816a8482ba.jpeg)
 
-7. Hasil Edit
-![Edit (Nama mangga dan harga jeruk)](https://user-images.githubusercontent.com/89894405/161004310-4bbf9929-cf55-48b5-af6e-d59d079883fa.jpeg)
-Keterangan : Harga jeruk dan nama mangga
+
+
 
 
 

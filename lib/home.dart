@@ -81,7 +81,19 @@ class HomeState extends State<Home> {
               itemList[index].name,
               style: textStyle,
             ),
-            subtitle: Text(this.itemList[index].price.toString()),
+            subtitle: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text(
+                  "Code   : " + itemList[index].code.toString(),
+                ),
+                Text("Price : Rp." + itemList[index].price.toString()),
+                const SizedBox(
+                  height: 5.0,
+                ),
+                Text("Stock : " + itemList[index].stock.toString()),
+              ],
+            ),
             trailing: GestureDetector(
               child: const Icon(Icons.delete),
               onTap: () {
